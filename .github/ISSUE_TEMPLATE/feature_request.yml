@@ -1,0 +1,30 @@
+name: ✨ 기능 요청
+description: 새로운 기능이나 개선 사항을 제안해주세요
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 배경 / 문제 상황
+      description: 이 기능이 왜 필요한가요?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 제안 내용
+      description: 어떤 기능을 만들고 싶나요?
+    validations:
+      required: true
+  - type: dropdown
+    id: part
+    attributes:
+      label: 관련 파트
+      options:
+        - mobile
+        - backend
+        - ai
+        - 기타
+    validations:
+      required: true
